@@ -53,7 +53,7 @@ if(WIN32)
 set(CMAKE_CXX_FLAGS " -std=c++11 -pthread  ${CMAKE_CXX_FLAGS}")
 else()
 set(CMAKE_CXX_FLAGS " -std=c++11 -pthread -Wno-multichar ${CMAKE_CXX_FLAGS}")
-fi()
+endif()
 
 if(CMAKE_BUILD_TYPE MATCHES "Debug")
   set(CMAKE_CXX_FLAGS " -g -O0 ${CMAKE_CXX_FLAGS}")
